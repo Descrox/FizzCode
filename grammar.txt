@@ -1,0 +1,60 @@
+Token Types:
+  Values:
+    INT     - Whole number value
+    FLOAT   - Floating point number value
+    STR     - String value
+    KEY     - Keyword value
+    ID      - Identifier value
+    
+  Operations:
+    ADD     - "+" symbol
+    SUB     - "-" symbol
+    MUL     - "*" symbol
+    DIV     - "/" symbol
+    EQ      - "=" symbol
+    EE      - "==" symbol
+    NE      - "!=" symbol
+    LT      - "<" symbol
+    GT      - ">" symbol
+    LTE     - "<=" symbol
+    GTE     - ">=" symbol
+    NOT     - "!" symbol
+    
+  Symbols:
+    LPAREN  - "(" symbol
+    RPAREN  - ")" symbol
+    COLON   - ":" symbol
+    COMMA   - "," symbol
+    LSQUARE - "[" symbol
+    RSQUARE - "]" symbol
+    
+  Special:
+    EOF     - End of file
+    
+Keywords:
+  var       - Variable declaration
+  and       - Comparison operation
+  or        - Comparison operation
+  if        - If branch declaration
+  elif      - Alternate If branch declaration
+  else      - If branch else case declaration
+  while     - While loop declaration
+  for       - For loop declaration
+  
+Constant Variables:
+  true      - Boolean value
+  false     - Boolean value
+  null      - Null value
+  
+Expression Types:
+  expr      - Expects any of the following:
+                "var", "if", "while", "for", LSQUARE or a binary operation between two values using "and" or "or".
+  
+  compExpr  - Expects a binary operation between two values using EE, NE, LT, GT, LTE or GTE.
+  
+  arithExpr - Expects a binary operation between two values using ADD or SUB.
+  
+  term      - Expects a binary operation between two values using MUL or DIV.
+  
+  factor    - Expects any of the following:
+                SUB, NOT, INT, FLOAT, LPAREN, ID, STR
