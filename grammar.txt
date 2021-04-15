@@ -48,13 +48,48 @@ Constant Variables:
   
 Expression Types:
   expr      - Expects any of the following:
-                "var", "if", "while", "for", LSQUARE or a binary operation between two values using "and" or "or".
+              VarAssignNode:
+                "var"
+                
+              IfNode:
+                "if"
+                
+              WhileNode:
+                "while"
+                
+              ForNode:
+                "for"
+                
+              ListNode:
+                LSQUARE
+                
+              BinOpNode:
+                "and", "or"
   
-  compExpr  - Expects a binary operation between two values using EE, NE, LT, GT, LTE or GTE.
+  compExpr  - Expects any of the following:
+                BinOpNode:
+                  EE, NE, LT, GT, LTE, GTE
   
-  arithExpr - Expects a binary operation between two values using ADD or SUB.
+  arithExpr - Expects any of the following:
+                BinOpNode:
+                  ADD, SUB
   
-  term      - Expects a binary operation between two values using MUL or DIV.
+  term      - Expects any of the following:
+                BinOpNode:
+                  MUL, DIV
   
   factor    - Expects any of the following:
-                SUB, NOT, INT, FLOAT, LPAREN, ID, STR
+                UnaryOpNode:
+                  SUB, NOT
+                
+                NumberNode:
+                  INT, FLOAT
+                
+                BinOpNode (parenthesis):
+                  LPAREN
+                
+                VarAccessNode:
+                  ID
+                
+                StringNode:
+                  STR
