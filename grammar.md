@@ -1,5 +1,5 @@
 # Grammar
-##Values
+## Values
 A value is represented in a handful of types.
 - Number
   - An integer or floating point value.
@@ -12,19 +12,19 @@ A value is represented in a handful of types.
 - Function
   - A command which can be defined and called.
 
-###Variables
+### Variables
 A variables is declared using either the *var* or *const* keywords.
 Defining a variable with *const* makes it unchangeable later in the program.
 Unlike in Java variables only hold values, not references.
 
-###Functions
+### Functions
 A function is declared using the *func* keyword.
 All defined functions are constant and can not be changed after creation.
 Functions need no defined return or parameter types, and will determine those values at runtime.
 
 You can only use the *return* keyword inside a Function.
 
-##Branching
+## Branching
 Fizz has a few basic branching commands such as:
 - if
   - A conditional branch which can be continued using the *elif* keyword, or finalized using the *else* keyword.
@@ -35,7 +35,7 @@ Fizz has a few basic branching commands such as:
 
 Both *while* and *for* loops can use the *continue* and *break* keyword, which share the same functionality as in Java.
 
-##Other Keywords
+## Other Keywords
 Some additional keywords include:
 - cast
   - Used to cast one value to another.
